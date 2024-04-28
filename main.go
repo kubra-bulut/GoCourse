@@ -1,10 +1,11 @@
 package main
 
 import (
-	"golesson/conditionals"
+	"golesson/loops"
 )
 
 func main() {
 	//variables.Demo1()
-	conditionals.Demo3()
+	//conditionals.Demo3()
+	loops.Demo5()
 }
