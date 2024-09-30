@@ -1,8 +1,7 @@
 package main
 
 import (
-	"fmt"
-	"golesson/channels"
+	"golesson/interfaces"
 )
 
 func main() {
@@ -37,13 +36,23 @@ func main() {
 	//structs.Demo2()
 
 	//Routine and Channels
-	ciftSayiCn := make(chan int)
-	tekSayiCn := make(chan int)
-	go channels.CiftSayilar(ciftSayiCn)
-	go channels.TekSayilar(tekSayiCn)
+	// ciftSayiCn := make(chan int)
+	// tekSayiCn := make(chan int)
+	// go channels.CiftSayilar(ciftSayiCn)
+	// go channels.TekSayilar(tekSayiCn)
 
-	ciftSayiToplam, tekSayiToplam := <-ciftSayiCn, <-tekSayiCn
-	carpim := ciftSayiToplam * tekSayiToplam
-	fmt.Println("Çarpım: ", carpim)
+	// ciftSayiToplam, tekSayiToplam := <-ciftSayiCn, <-tekSayiCn
+	// carpim := ciftSayiToplam * tekSayiToplam
+	// fmt.Println("Çarpım: ", carpim)
 
+	//Interfaces
+	//interfaces.Demo1()
+	//interfaces.Demo2()
+
+	//Defer
+	//defer_statement.Test()
+	//defer_statement.Demo3()
+	//error_handling.Demo1()
+
+	interfaces.Demo3()
 }
