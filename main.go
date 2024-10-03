@@ -1,7 +1,7 @@
 package main
 
 import (
-	"golesson/interfaces"
+	"golesson/project"
 )
 
 func main() {
@@ -54,5 +54,15 @@ func main() {
 	//defer_statement.Demo3()
 	//error_handling.Demo1()
 
-	interfaces.Demo3()
+	//interfaces.Demo3()
+
+	//error_handling.Demo2()
+	//fmt.Println(error_handling.TahminEt2(102))
+
+	//string_functions.Demo1()
+	//string_functions.Demo2()
+
+	//restful.Demo2()
+	//project.AddProduct()
+	project.GetAllProducts()
 }
